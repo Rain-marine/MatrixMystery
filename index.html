@@ -83,19 +83,36 @@
 </main>
 
 
-<script>
-  const params = new URLSearchParams(window.location.search);
-  const token = params.get("token");
-
-  if (token !== "happyfunmeowmeow") {
-    document.body.innerHTML = `
-      <main style="text-align:center;padding:80px 20px">
-        <h1>Access denied</h1>
-        <p>Only those with the complete puzzle may enter.</p>
-      </main>
-    `;
-  }
-</script>
   
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const correctToken = "happyfunmeowmeow";
+
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("token");
+
+    if (token !== correctToken) {
+        document.body.innerHTML = `
+            <div style="
+                min-height:100vh;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center;
+                text-align:center;
+                background:#161221;
+                color:#eee5dc;
+                font-family:Georgia,serif;
+                padding:20px;
+            ">
+                <h1>ACCESS DENIED</h1>
+                <p>The spell is incomplete.</p>
+                <p>Only those who possess all five pieces may enter.</p>
+            </div>
+        `;
+    }
+});
+</script>
+
 </body>
 </html>
