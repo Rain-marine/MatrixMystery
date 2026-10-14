@@ -81,5 +81,21 @@
   <div class="seal"><i></i> The archive is sealed</div>
   <footer>Keep your clues close · 001 / 006</footer>
 </main>
+
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const token = params.get("token");
+
+  if (token !== "happyfunmeowmeow") {
+    document.body.innerHTML = `
+      <main style="text-align:center;padding:80px 20px">
+        <h1>Access denied</h1>
+        <p>Only those with the complete puzzle may enter.</p>
+      </main>
+    `;
+  }
+</script>
+  
 </body>
 </html>
