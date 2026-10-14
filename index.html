@@ -40,6 +40,24 @@
     @media(prefers-reduced-motion:no-preference){.tiny-star{animation:glow 4s ease-in-out infinite alternate}@keyframes glow{to{opacity:.45;transform:rotate(14deg)}}}
   </style>
 </head>
+
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const token = params.get("token");
+
+  if (token !== "THEWITCH2026") {
+    document.body.innerHTML = `
+      <main style="text-align:center;padding:80px 20px">
+        <h1>Access denied</h1>
+        <p>Only those with the complete puzzle may enter.</p>
+      </main>
+    `;
+  }
+</script>
+
+
+  
 <body>
 <div class="stars" aria-hidden="true"></div>
 <svg class="hat" viewBox="0 0 850 700" aria-hidden="true">
