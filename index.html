@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#161221">
+  <meta name="description" content="A mysterious six-week side quest. The story begins soon.">
+  <title>The Side Quest | Coming Soon</title>
+  <style>
+    :root{color-scheme:dark;--ink:#eee5dc;--dim:#b9aabc;--accent:#dcb8ee;--background:#161221}
+    *{box-sizing:border-box}
+    html,body{min-height:100%;margin:0}
+    body{font-family:Georgia,"Times New Roman",serif;color:var(--ink);
+      background:radial-gradient(ellipse at 50% 35%,#30213e 0%,#21192d 35%,#161221 78%);
+      display:grid;place-items:center;overflow-x:hidden}
+    body::after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.14'/%3E%3C/svg%3E")}
+    .stars{position:fixed;inset:0;pointer-events:none;background-image:
+      radial-gradient(circle at 17% 18%,#d8bddf 0 1px,transparent 2px),
+      radial-gradient(circle at 80% 24%,#d8bddf 0 1px,transparent 2px),
+      radial-gradient(circle at 72% 78%,#d8bddf 0 1px,transparent 2px),
+      radial-gradient(circle at 23% 73%,#d8bddf 0 1px,transparent 2px),
+      radial-gradient(circle at 51% 9%,#d8bddf 0 1px,transparent 2px);opacity:.5}
+    .hat{position:fixed;left:50%;top:50%;transform:translate(-50%,-53%) rotate(-9deg);
+      width:min(92vw,850px);height:auto;opacity:.115;filter:blur(1.4px);pointer-events:none}
+    main{position:relative;width:min(90vw,750px);min-height:100vh;display:flex;flex-direction:column;
+      justify-content:center;align-items:center;text-align:center;padding:80px 12px 55px}
+    .eyebrow{font:600 11px/1.5 Arial,sans-serif;letter-spacing:.38em;text-transform:uppercase;color:#d3b1d9}
+    .tiny-star{font-size:23px;color:#d6afd9;margin:24px 0 17px}
+    h1{font-weight:normal;font-size:clamp(54px,9vw,104px);line-height:1.02;letter-spacing:-.058em;margin:0;
+      text-shadow:0 8px 60px #130e1d}
+    h1 em{font-weight:normal;color:#e0c2e6}
+    .rule{height:1px;background:linear-gradient(90deg,transparent,#9a789e,transparent);width:150px;margin:33px auto}
+    p{max-width:420px;font-size:clamp(17px,2.3vw,20px);line-height:1.75;color:var(--dim);margin:0}
+    .seal{display:inline-flex;align-items:center;gap:10px;margin-top:40px;border:1px solid #65506e;
+      border-radius:30px;padding:11px 19px;color:#d9c6da;font:11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;
+      background:#17111f88}
+    .seal i{width:6px;height:6px;border-radius:50%;background:#c9a5d5;box-shadow:0 0 14px #c9a5d5}
+    footer{position:absolute;bottom:28px;color:#8f8196;font:10px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase}
+    @media(prefers-reduced-motion:no-preference){.tiny-star{animation:glow 4s ease-in-out infinite alternate}@keyframes glow{to{opacity:.45;transform:rotate(14deg)}}}
+  </style>
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+<svg class="hat" viewBox="0 0 850 700" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f4cbff"/><stop offset="1" stop-color="#8663af"/></linearGradient>
+  </defs>
+  <path fill="url(#g)" d="M412 42 C395 140 355 219 322 303 C293 385 250 441 229 490 C315 542 511 559 615 488 C559 446 513 365 492 275 C473 194 465 119 412 42Z"/>
+  <path fill="#e4bee9" d="M228 485 C322 513 519 513 616 481 L637 526 C520 570 317 572 206 529Z"/>
+  <path fill="#b68fc7" d="M251 473 C314 493 514 496 597 464 L616 489 C508 541 314 528 229 490Z"/>
+  <path fill="#edcfef" d="M215 516 C134 518 110 558 165 590 C233 629 609 638 704 591 C757 564 701 521 630 523 C630 523 610 553 458 563 C303 568 245 539 215 516Z"/>
+  <path fill="#70517e" d="M166 577 C266 610 588 604 704 577 C683 623 239 644 166 577Z"/>
+  <path stroke="#f1daf1" stroke-width="10" fill="none" stroke-linecap="round" d="M407 95 C389 170 368 213 347 261" opacity=".55"/>
+  <path fill="#f8e2fb" d="M438 486 l11 18 21 3 -15 14 4 21 -21 -10 -19 10 3 -22 -16 -13 22 -3z"/>
+</svg>
+<main>
+  <div class="eyebrow">An invitation to the unknown</div>
+  <div class="tiny-star" aria-hidden="true">✧</div>
+  <h1>The <em>Side</em><br>Quest</h1>
+  <div class="rule"></div>
+  <p>Something curious is taking shape.<br>Six weeks. A handful of clues. One mystery.<br>The first door will open soon.</p>
+  <div class="seal"><i></i> The archive is sealed</div>
+  <footer>Keep your clues close · 001 / 006</footer>
+</main>
+</body>
+</html>
